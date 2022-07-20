@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>We Work</title>
+</head>
+<body>
+    <div class="header">      
+        <nav id="navbar">
+            <img src="./images/logo.png" class="logo" alt="We Work Logo">
+            <ul id="menu">
+                <li><a src="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1 class="text">About</h1>
+    <a name="home"></a>
+    <a name="about"></a>
+    <p class="text"><strong>We Work!</strong> Is a company that provides the right people to your project. Whatever you need to build,
+        clean, gardening, painting, farming, plumming and more, you will find here. 
+    </p>
+    <p class="text">Next time you have a project in mind, think of We Work!</p>
+
+    <h1 class="text">Services</h1>
+    <a name="services"></a>
+    <div class="container">
+        <div class="jobs">
+            <img src="./images/man_at_work.jpg" width="400px" height="300px" alt="Construction">
+            <p>Construction</p>
+        </div>
+        <div class="jobs">
+            <img src="./images/man_at_work1.jpg" width="400px" height="300px" alt="Plummer">
+            <p>Plummer</p>
+        </div>
+        <div class="jobs">
+            <img src="./images/man_at_work2.jpg" width="400px" height="300px" alt="window Cleaner">
+            <p>Window Cleaner</p>
+        </div>
+        <div class="jobs">
+            <img src="./images/man_at_work3.jpg" width="400px" height="300px" alt="Farming">
+            <p>Farming</p>
+        </div>
+        <div class="jobs">
+            <img src="./images/man_at_work4.jpg" width="400px" height="300px" alt="Painter">
+            <p>Painter</p>
+        </div>
+    </div>
+    
+
+    <h1 class="text">Team</h1>
+    <a name="team"></a>
+    <div class="team">
+        <div class="team1">
+            <img src="./images/team1.jpg" width="200px" height="300" alt="CEO">
+            <p><strong> Sara Lee </strong> - C.E.O</p>
+        </div>
+        <div class="team1">
+            <img src="./images/team2.jpg" width="200px" height="300" alt="CFO">
+            <p><strong> Carla Sanders </strong> - C.F.O</p>
+        </div>
+    </div>
+
+    <h1 class="text">Contact</h1>
+    <a name="contact"></a>
+    <div class="contact">
+        <p>Phone: +44 01273 255620</p>
+        <p>Email: loudmar@loudmar.com</p>
+        <p>22 North Road</p>
+        <p>BN1 1LP - Brighton UK</p>
+    </div>
+
+    <footer><small>All rights reserved to We Work - 2022.</small></footer>
+
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+    
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    
+</body>
+</html>

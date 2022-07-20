@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 70vh;
+    background-image: url(./images/header_cover.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+nav ul {
+    background: white;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 25px;
+    color: black;
+    font-weight: 900;
+    text-shadow: 10px;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: lightskyblue;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.text {
+    padding: 20px 8%;
+    text-align: center;
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1px 8%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: padding 1s;
+}
+
+nav.sticky ul {
+    width: auto;
+}
+
+.container {
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;     
+}
+
+.jobs {
+    width: fit-content;
+    text-align: center;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.jobs p {
+    margin-top: 8px;
+}
+
+.team {
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-image: url(./images/team_work.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.team1 {
+    width: fit-content;
+    text-align: center;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.contact {
+    background-color: black;
+    color: white;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 10px;
+    opacity: .95;
+}
+
+h1 {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 700px) {
+    .header  {
+        display: none;
+    }
+    .team {
+        display: inline-flex;
+        margin: 0;
+        flex-wrap: wrap;
+        float: left;
+        padding: 0;
+        background-position: 0%;
+        background-size: contain;
+    }
+    .team1 {
+        width: 5%;
+        padding: 0;
+        float: left;
+    }
+    .team .team1 p {
+        font-size: small;
+        text-align: center;
+    }
+}
